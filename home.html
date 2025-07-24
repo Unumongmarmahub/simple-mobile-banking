@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <div>
+        <div class="mockup-phone border-primary">
+          <div class="camera"></div>
+          <div class="display">
+            <div class="artboard artboard-demo phone-3">
+              <!-- Available Balance Start  -->
+              <div class="stats shadow">
+                <div class="stat">
+                  <div class="stat-title">Available Balance</div>
+                  <div id="available-balance" class="stat-value">5300</div>
+                </div>
+              </div>
+              <!-- Available Balance end  -->
+              <!-- divider start  -->
+              <div class="divider"></div>
+              <!-- divider start  -->
+
+              <!-- buttons start  -->
+              <div class="flex gap-1">
+                <button class="btn">Add Money</button>
+                <button class="btn">Cash Out</button>
+              </div>
+              <!-- buttons end  -->
+
+              <!-- divider start  -->
+              <div class="divider"></div>
+              <!-- divider start  -->
+
+              <!-- add money section start  -->
+              <div
+                class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+              >
+                <form class="card-body" autocapitalize="false">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Enter Your Amount</span>
+                    </label>
+                    <input
+                      id="input-money-number"
+                      type="text"
+                      placeholder="Amount"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Pin</span>
+                    </label>
+                    <input
+                      id="input-pin"
+                      type="password"
+                      placeholder="Type Your Pin Number"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control mt-3">
+                    <button id="add-money-btn" class="btn btn-primary">
+                      Add Money
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <!-- add money section end  -->
+
+              <!-- cash out section start  -->
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body" autocapitalize="false">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Enter Your Amount</span>
+                    </label>
+                    <input
+                      id="input-money-number"
+                      type="text"
+                      placeholder="Amount"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Pin</span>
+                    </label>
+                    <input
+                      id="add-money-pin"
+                      type="password"
+                      placeholder="Type Your Pin Number"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control mt-3">
+                    <button id="cash-out-btn" class="btn btn-primary">
+                      Cash Out
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <!-- cash out section end  -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/home.js"></script>
+  </body>
+</html>
