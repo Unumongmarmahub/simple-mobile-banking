@@ -7,7 +7,7 @@ document
     const pinNumber = document.getElementById("input-pin-number").value;
 
     if (mobileNumber === "018" && pinNumber === "1234") {
-      window.location.href = "../home.html";
+      window.location.href = "home.html";
     } else {
       alert("Your Mobile Number or Pin Number Wrong.");
     }
