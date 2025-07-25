@@ -26,6 +26,13 @@ document
 
     if (inputPinNumber === 1234) {
       document.getElementById("available-balance").innerText = newBalance;
+
+      // transaction
+
+      const transactionContainerTag = document.getElementById("transactions");
+      const p = document.createElement("p");
+      p.innerText = `Added money is ${inputMoneyNumber} and Available balance is ${newBalance}`;
+      transactionContainerTag.append(p);
     } else {
       alert("Your pin in wrong.");
     }

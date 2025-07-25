@@ -33,9 +33,10 @@
               <!-- divider start  -->
 
               <!-- buttons start  -->
-              <div class="flex gap-1">
+              <div class="flex gap-2">
                 <button id="add-btn" class="btn">Add Money</button>
                 <button id="out-btn" class="btn">Cash Out</button>
+                <button id="transaction-btn" class="btn">Transaction</button>
               </div>
               <!-- buttons end  -->
 
@@ -44,7 +45,10 @@
               <!-- divider start  -->
 
               <!-- add money section start  -->
-              <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div
+                id="add-money-form"
+                class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+              >
                 <form class="card-body" autocapitalize="false">
                   <div class="form-control">
                     <label class="label">
@@ -80,7 +84,8 @@
               <!-- add money section end  -->
 
               <!-- cash out section start  -->
-              <div id="out-money-form"
+              <div
+                id="out-money-form"
                 class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
               >
                 <form class="card-body" autocapitalize="false">
@@ -116,6 +121,12 @@
                 </form>
               </div>
               <!-- cash out section end  -->
+              <!-- transaction start -->
+              <div id="transactions" class="hidden">
+                <h2>Here is your transaction history.</h2>
+                
+              </div>
+              <!-- transaction end -->
             </div>
           </div>
         </div>
