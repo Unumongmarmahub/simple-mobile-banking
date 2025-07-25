@@ -34,8 +34,8 @@
 
               <!-- buttons start  -->
               <div class="flex gap-1">
-                <button class="btn">Add Money</button>
-                <button class="btn">Cash Out</button>
+                <button id="add-btn" class="btn">Add Money</button>
+                <button id="out-btn" class="btn">Cash Out</button>
               </div>
               <!-- buttons end  -->
 
@@ -44,9 +44,7 @@
               <!-- divider start  -->
 
               <!-- add money section start  -->
-              <div
-                class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
-              >
+              <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <form class="card-body" autocapitalize="false">
                   <div class="form-control">
                     <label class="label">
@@ -82,14 +80,16 @@
               <!-- add money section end  -->
 
               <!-- cash out section start  -->
-              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div id="out-money-form"
+                class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+              >
                 <form class="card-body" autocapitalize="false">
                   <div class="form-control">
                     <label class="label">
                       <span class="label-text">Enter Your Amount</span>
                     </label>
                     <input
-                      id="input-money-number"
+                      id="cast-out-money-number"
                       type="text"
                       placeholder="Amount"
                       class="input input-bordered"
@@ -101,7 +101,7 @@
                       <span class="label-text">Pin</span>
                     </label>
                     <input
-                      id="add-money-pin"
+                      id="cash-out-pin"
                       type="password"
                       placeholder="Type Your Pin Number"
                       class="input input-bordered"
@@ -122,6 +122,8 @@
       </div>
     </main>
 
-    <script src="./js/home.js"></script>
+    <script src="./js/addMoney.js"></script>
+    <script src="./js/cashOut.js"></script>
+    <script src="./js/features.js"></script>
   </body>
 </html>
